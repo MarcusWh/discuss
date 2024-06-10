@@ -29,6 +29,7 @@ export const {
     async session({ session, user }: any) {
       if (session && user) {
         session.user.id = user.id;
+        console.log("signed in");
       }
       return session;
     },
